@@ -5,6 +5,8 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
 	id="WebApp_ID" version="4.0">
 
+
+
 	<display-name>ServletTutorial</display-name>
 
 	<welcome-file-list>
@@ -16,14 +18,12 @@
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
 
-
 	<!-- CAU HINH O DAY -->
 	<!-- Định nghĩa servlet có tên helloServlet, gắn với class HelloServlet -->
 	<servlet>
 		<servlet-name>hello</servlet-name>
 		<servlet-class>vn.edu.giadinh.dhpm12.servlet.HelloServlet</servlet-class>
 	</servlet>
-
 	<servlet>
 		<servlet-name>initParamServlet</servlet-name>
 		<servlet-class>vn.edu.giadinh.dhpm12.servlet.InitParamServlet</servlet-class>
@@ -39,7 +39,6 @@
 		</init-param>
 
 	</servlet>
-
 
 	<servlet-mapping>
 		<servlet-name>initParamServlet</servlet-name>

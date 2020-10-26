@@ -3,6 +3,7 @@ package vn.edu.giadinh.dhpm12.servlet;
 import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -12,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class MyDefaultServlet
  */
-@WebServlet("/")
+//@WebServlet("/")
 public class MyDefaultServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -32,6 +33,10 @@ public class MyDefaultServlet extends HttpServlet {
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		RequestDispatcher dispatcher = request.getServletContext().getRequestDispatcher("/WEB-INF/jsps/uploadFile.jsp");
 
+		ServletContext sctx = request.getServletContext();
+		
+		
+		
 		dispatcher.forward(request, response);// CHUYỂN HƯỚNG
 	}
 

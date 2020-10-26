@@ -49,6 +49,8 @@ public class InitParamServlet extends HttpServlet {
 		// Lấy ra giá trị của tham số khởi tạo (initialization parameter) theo một cách
 		// khác.
 		String emailSupport2 = this.getServletConfig().getInitParameter("emailSupport2");
+		
+		response.setContentType("text/html;charset=UTF-8");
 
 		ServletOutputStream out = response.getOutputStream();
 
